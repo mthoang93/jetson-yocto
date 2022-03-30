@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+    <remote fetch="https://github.com" name="origin"/>
+
+    <default remote="origin" revision="master" sync-j="2"/>
+
+    <project path="poky" name="yoctoproject/poky" revision="master"/>
+    <project path="meta-tegra" name="OE4T/meta-tegra" revision="master"/>
+</manifest>
