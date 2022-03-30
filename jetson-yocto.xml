@@ -2,9 +2,14 @@
 
 <manifest>
     <remote fetch="https://github.com" name="origin"/>
+    <remote fetch="git://git.yoctoproject.org/" name="yoctoprj"/>
 
     <default remote="origin" revision="master" sync-j="2"/>
 
-    <project path="poky" name="yoctoproject/poky" revision="master"/>
-    <project path="meta-tegra" name="OE4T/meta-tegra" revision="master"/>
+    <project path="poky" name="yoctoproject/poky" revision="dunfell"/>
+    <project path="meta-openembedded" name="openembedded/meta-openembedded" revision="dunfell"/>
+    <project path="meta-virtualization" name="meta-virtualization" remote="yoctoprj" revision="dunfell"/>
+    <project path="meta-tegra" name="OE4T/meta-tegra" revision="dunfell"/>
+    <project path="meta-tegra-community" name="OE4T/meta-tegra-community" revision="dunfell"/>
+    <project path="tegra-demo-distro" name="OE4T/tegra-demo-distro" revision="dunfell"/>
 </manifest>
